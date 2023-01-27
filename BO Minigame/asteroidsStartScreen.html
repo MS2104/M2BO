@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asteroidsstartscreen.css">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+    <h1>
+        Asteroids '79
+        <h2>
+            <blink>PRESS SPACE TO PLAY</blink>
+        </h2>
+    </h1>
+
+    <h3>
+        CONTROLS:<br>
+        W - Forward<br>
+        A - Turn left<br>
+        D - Turn right<br>
+        SPACE - Fire<br>
+    </h3>
+
+    <script>
+        document.body.onkeyup = function(e) {
+            if (e.key == " " || e.code == "Space" || e.keycode == 32) {
+                location.replace("/asteroidsgame.html")
+            }
+        }
+    </script>
+</body>
+</html>

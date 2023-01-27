@@ -1,0 +1,40 @@
+body {
+    font-family: monospace;
+}
+
+h1 {
+    font-size: 96px;
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 5%;
+}
+
+h3 {
+    text-align: center;
+    padding: 100px;
+    color: white;
+}
+
+blink {
+    color: white;
+    text-align: center;
+
+    animation: 1s linear infinite condemned_blink_effect;
+  }
+  
+  @keyframes condemned_blink_effect {
+    0% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
